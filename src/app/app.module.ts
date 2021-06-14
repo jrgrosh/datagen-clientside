@@ -4,15 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ImageViewComponent } from './image-view/image-view.component';
 import { DatagenButtonComponent } from './datagen-button/datagen-button.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageViewComponent,
-    DatagenButtonComponent
+    DatagenButtonComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

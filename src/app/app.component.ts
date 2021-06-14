@@ -14,9 +14,20 @@ export class AppComponent {
 
   }
 
+  acceptOnClick(){
+    console.log("accept clicked")
+    this.imageGenService.validateSyntheticImageCandidate();
+    this.imageGenService.updateRandomSyntheticCandidateURL();
+  }
+
+  rejectOnClick(){
+    console.log("reject clicked")
+    this.imageGenService.updateRandomSyntheticCandidateURL();
+  }
+
   ngOnInit(){
     this.image = this.imageGenService.getNextImagePath();
-    document.getElementById("image-view-component")?.setAttribute("src", this.image.valueOf())
+    //document.getElementById("image-view-component")?.setAttribute("src", this.image.valueOf())
   }
   
 

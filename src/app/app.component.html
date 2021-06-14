@@ -9,6 +9,6 @@
 <app-image-view style="display:flex; justify-content: center;"></app-image-view>
 
 <div class="navbar">
-  <img src="/assets/img/green_check.svg" style="height: 20px; width: 20px; align-self: center; margin-right: 48px;">
-  <img src="/assets/img/red_x.svg" style="height: 20px; width: 20px; align-self: center;">
+  <img src="/assets/img/green_check.svg" (click)="acceptOnClick()" style="height: 20px; width: 20px; align-self: center; margin-right: 48px;">
+  <img src="/assets/img/red_x.svg" (click)="rejectOnClick()" style="height: 20px; width: 20px; align-self: center;">
 </div>
