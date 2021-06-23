@@ -22,6 +22,7 @@ export class AppComponent {
 
   rejectOnClick(){
     console.log("reject clicked")
+    this.imageGenService.rejectSyntheticImageCandidate();
     this.imageGenService.updateRandomSyntheticCandidateURL();
   }
 

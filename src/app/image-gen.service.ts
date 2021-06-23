@@ -16,6 +16,15 @@ export class ImageGenService {
   private randomSyntheticImageLinkUrl:string = "http://localhost:3000/unvalidated/synthetic-images/random"
   constructor(private http: HttpClient) { }
 
+
+  rejectSyntheticImageCandidate(){
+    console.log("REST no longer")
+    console.log(this.imageUrl);
+    this.http.delete<any>(this.imageUrl).subscribe((response) => {
+      console.log(response);
+    });
+  }
+
   validateSyntheticImageCandidate(){
     console.log("REST no longer")
     console.log(this.imageUrl);
