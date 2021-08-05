@@ -27,6 +27,7 @@ export class AppComponent {
   }
 
   ngOnInit(){
+    this.imageGenService.updateRandomSyntheticCandidateURL();
     this.image = this.imageGenService.getNextImagePath();
     //document.getElementById("image-view-component")?.setAttribute("src", this.image.valueOf())
   }
